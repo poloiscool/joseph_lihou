@@ -1,118 +1,171 @@
-/* Resetting default styles */
-body, img {
+*{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     box-sizing: border-box;
-    font-family: monospace;
-}
-
-.head{
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-}
-
-.head img{
-    height: 40px;
-}
-
-.video-grid{
-    overflow: auto;
-    position: relative;
-}
-
-.double-container{
-    display: flex;
-}
-
-.video-container{
-    display: flex;
+    background: rgb(243, 243, 243) ;
     overflow: hidden;
-    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
     align-items: center;
-    height: 600px;
-    width: 100%;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box{
+    width: 40px;
+    height: 500px;
+    margin: 5px;
+    background: url(frontpage/ads/cannes.png);
+    background-size: cover;
+    background-position: center;
     position: relative;
+    transition: width 0.2s ease;
 }
 
-.contact{
+/* images */
+.img-box:nth-child(2){
+    background: url(frontpage/ads/underarmour.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3){
+    background: url(frontpage/ads/coke.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(frontpage/ads/lfc.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background: url(frontpage/mv/hello.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(6){
+    background: url(frontpage/mv/mind.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(7){
+    background: url(frontpage/mv/stargazing.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(8){
+    background: url(frontpage/film/wire.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(9){
+    background: url(frontpage/film/fathoms.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(10){
+    background: url(frontpage/film/vvs.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(11){
+    background: url(frontpage/tv/franchise.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(12){
+    background: url(frontpage/dir/alexmills.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(13){
+    background: url(frontpage/dir/isc.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(14){
+    background: url(frontpage/dir/xray.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(15){
+    background: url(frontpage/art/ba.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(16){
+    background: url(frontpage/art/blackhole.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(17){
+    background: url(frontpage/art/xmas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-box h3{
+    color: #989898;
     position: absolute;
-    overflow: auto;
-    top: 40px;
-    color: black;
-    z-index: 2;
-    opacity: 1;
-    text-align: center;
+    bottom: -30px;
+    left: 0px;
     opacity: 0;
-    font-family: monospace;
-    background: white;
-    width: 250px;
     font-size: 15px;
+    transition: all 0.2s ease;
 }
 
-.head:hover .contact{
+.img-box.active h3 {
     opacity: 1;
+    bottom: 0px;
+    cursor: pointer;
 }
 
-.footer{
-    font-family: monospace;
-    font-size: 15px;
-    padding: 10px;
+.img-box.active {
+    height: 500px;
+    width: 750px;
 }
 
-.video {
-    width: 100%;
+
+
+.logo {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    width: 100px;
     height: auto;
 }
 
-.caption {
+.footer {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    color: white;
-    z-index: 1;
-    opacity: 1;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #989898;
+    font-size: 12px;
+    opacity: 0.5;
 }
 
-.caption h1 {
-    font-family: monospace;
-    letter-spacing: -1px;
-    margin: 0;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 1);
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
-
-.caption p {
-    font-family: monospace;
-    margin: 0;
+.header {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    color: #989898;
     font-size: 10px;
-    background-color: rgba(0, 0, 0, 1);
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
-
-.video-container:hover .caption {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-.single-container{
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    width: 100%;
-}
-
-.video-container video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    float: left;
-    z-index: 0;
+    opacity: 0.5;
 }
