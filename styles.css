@@ -24,7 +24,7 @@
 
 .img-box{
     width: 40px;
-    height: 500px;
+    height: 400px;
     margin: 5px;
     background: url(frontpage/ads/cannes.png);
     background-size: cover;
@@ -51,67 +51,72 @@
     background-position: center;
 }
 .img-box:nth-child(5){
-    background: url(frontpage/mv/hello.png);
+    background: url(frontpage/mv/motive.png);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(6){
-    background: url(frontpage/mv/mind.png);
+    background: url(frontpage/mv/hello.png);
     background-size: cover;
     background-position: center;
 }
 .img-box:nth-child(7){
+    background: url(frontpage/mv/mind.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(8){
     background: url(frontpage/mv/stargazing.png);
     background-size: cover;
     background-position: center;
 }
 
-.img-box:nth-child(8){
+.img-box:nth-child(9){
     background: url(frontpage/film/wire.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(9){
+.img-box:nth-child(10){
     background: url(frontpage/film/fathoms.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(10){
+.img-box:nth-child(11){
     background: url(frontpage/film/vvs.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(11){
+.img-box:nth-child(12){
     background: url(frontpage/tv/franchise.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(12){
+.img-box:nth-child(13){
     background: url(frontpage/dir/alexmills.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(13){
+.img-box:nth-child(14){
     background: url(frontpage/dir/isc.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(14){
+.img-box:nth-child(15){
     background: url(frontpage/dir/xray.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(15){
+.img-box:nth-child(16){
     background: url(frontpage/art/ba.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(16){
+.img-box:nth-child(17){
     background: url(frontpage/art/blackhole.png);
     background-size: cover;
     background-position: center;
 }
-.img-box:nth-child(17){
+.img-box:nth-child(18){
     background: url(frontpage/art/xmas.png);
     background-size: cover;
     background-position: center;
@@ -135,8 +140,8 @@
 }
 
 .img-box.active {
-    height: 500px;
-    width: 750px;
+    height: 400px;
+    width: 700px;
 }
 
 
