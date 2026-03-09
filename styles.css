@@ -179,3 +179,13 @@
     font-size: 7.5px;
     opacity: 0.5;
 }
+
+.portfoliolink {
+    position: absolute;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    color: #989898;
+    font-size: 12px;
+    opacity: 0.5;
+}
